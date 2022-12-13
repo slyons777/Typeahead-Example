@@ -14,7 +14,7 @@ document.querySelector(".userInput").addEventListener("change", (e) => {
 
 //search array of objects
 const searchTask = () => {
-  let input = searchBox.value.toLowerCase();
+  let input = userInput.value.toLowerCase();
   options.filter((word) => word.name.toLowerCase().indexOf(input) !== -1);
   //display searched words
   let searchBoxResults = document.createElement("li");
